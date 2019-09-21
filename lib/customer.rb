@@ -25,6 +25,7 @@ end
 
   def waiters
     meals.map { |meals| meal.waiter }
+    end
   end
   
 end
