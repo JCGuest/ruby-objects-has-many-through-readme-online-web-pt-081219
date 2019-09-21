@@ -3,7 +3,7 @@ class Customer
   
   @@all = []
   
-  def inititalize(name, age)
+  def initialize(name, age)
   @name= name
   @age = age
   @@all << self
