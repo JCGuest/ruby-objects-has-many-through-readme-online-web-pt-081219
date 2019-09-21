@@ -4,9 +4,9 @@ class Customer
   @@all = []
   
   def initialize(name, age)
-  @name= name
-  @age = age
-  @@all << self
+    @name= name
+    @age = age
+    @@all << self
   end
   
   def self.all
@@ -18,14 +18,15 @@ class Customer
   end
   
   def meals
-  Meal.all.select do |meal|
+    Meal.all.select do |meal|
     meal.customer == self
   end
 end
 
   def waiters
-    meals.map { |meals| meal.waiter 
-    end
+    meals.map do |meal|
+    meal.waiter
   end
+end
   
 end
