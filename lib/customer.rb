@@ -22,5 +22,9 @@ class Customer
     meal.customer == self
   end
 end
+
+  def waiter
+    Meals.map { |meals| meal.waiter }
+  end
   
 end
